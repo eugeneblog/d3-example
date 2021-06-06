@@ -1,0 +1,29 @@
+{
+  "name": "d3-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && npm run server",
+    "server": "webpack serve -c ./config/webpack.serve.js --mode development",
+    "build": "webpack -c ./config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugeneblog/d3-example.git"
+  },
+  "author": "Eugene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugeneblog/d3-example/issues"
+  },
+  "homepage": "https://github.com/eugeneblog/d3-example#readme",
+  "devDependencies": {
+    "d3": "^6.7.0",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
